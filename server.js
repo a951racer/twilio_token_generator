@@ -32,6 +32,6 @@ app.get('/token', function (req, res) {
   })
 })
 
-app.listen(4001, function () {
-  console.log('Programmable Chat token server listening on port 4001!')
+app.listen(process.env.PORT, function () {
+  console.log(`Programmable Chat token server listening on port ${process.env.PORT}!`)
 })
